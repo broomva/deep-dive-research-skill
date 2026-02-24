@@ -36,11 +36,13 @@ Conduct professional-grade research on any subject (companies, products, markets
 
 This skill **requires** three dependent skills to function:
 
-| Skill | Purpose | Install |
-|-------|---------|---------|
-| **financial-deep-research** | Financial analysis & funding | `npx skills add eng0ai/eng0-template-skills@financial-deep-research -g` |
-| **competitor-intel** | Competitive intelligence | `npx skills add ognjengt/founder-skills@competitor-intel -g` |
-| **app-store-optimization** | Product & market metrics | `npx skills add sickn33/antigravity-awesome-skills@app-store-optimization -g` |
+| Skill | Purpose | Status | Install |
+|-------|---------|--------|---------|
+| **financial-deep-research** | Financial analysis & funding | Required | `npx skills add eng0ai/eng0-template-skills@financial-deep-research -g` |
+| **competitor-intel** | Competitive intelligence | Required | `npx skills add ognjengt/founder-skills@competitor-intel -g` |
+| **app-store-optimization** | Product & market metrics | Required | `npx skills add sickn33/antigravity-awesome-skills@app-store-optimization -g` |
+| **agent-control-metalayer-skill** | Governance & policy enforcement | Optional | `npx skills add broomva/agent-control-metalayer-skill -g` |
+| **harness-engineering-skill** | Deterministic workflows & safety | Optional | `npx skills add broomva/harness-engineering-skill -g` |
 
 📖 **[See full installation guide →](INSTALLATION.md)**
 
@@ -50,7 +52,7 @@ This skill **requires** three dependent skills to function:
 
 ```bash
 # Install all dependencies + orchestrator skill in one command
-npx skills add eng0ai/eng0-template-skills@financial-deep-research ognjengt/founder-skills@competitor-intel sickn33/antigravity-awesome-skills@app-store-optimization broomva/deep-dive-research-skill -g -y
+npx skills add eng0ai/eng0-template-skills@financial-deep-research ognjengt/founder-skills@competitor-intel sickn33/antigravity-awesome-skills@app-store-optimization broomva/agent-control-metalayer-skill broomva/harness-engineering-skill broomva/deep-dive-research-skill -g -y
 ```
 
 **Or follow [INSTALLATION.md](INSTALLATION.md) for step-by-step setup**

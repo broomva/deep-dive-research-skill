@@ -28,6 +28,20 @@ The Deep-Dive Research Orchestrator **requires** three skills to function:
 - **Purpose:** App metrics, product analysis, user engagement metrics
 - **Required:** ✅ Yes
 
+## Optional Dependencies
+
+These skills enhance governance and reliability but are not required for core research:
+
+### 4. **agent-control-metalayer-skill**
+- **Source:** `broomva/agent-control-metalayer-skill`
+- **Purpose:** Governance framework, policy enforcement, audit trails
+- **Required:** ❌ Optional (enhances governance)
+
+### 5. **harness-engineering-skill**
+- **Source:** `broomva/harness-engineering-skill`
+- **Purpose:** Deterministic workflows, test harness validation, safety checks
+- **Required:** ❌ Optional (enhances reliability)
+
 ## Installation Methods
 
 ### Method 1: Quick Install (Recommended) ⚡
@@ -35,8 +49,8 @@ The Deep-Dive Research Orchestrator **requires** three skills to function:
 Install all dependencies + skill in one command:
 
 ```bash
-# Install all dependencies and the orchestrator skill
-npx skills add eng0ai/eng0-template-skills@financial-deep-research ognjengt/founder-skills@competitor-intel sickn33/antigravity-awesome-skills@app-store-optimization broomva/deep-dive-research-skill -g -y
+# Install all dependencies (required + optional) and the orchestrator skill
+npx skills add eng0ai/eng0-template-skills@financial-deep-research ognjengt/founder-skills@competitor-intel sickn33/antigravity-awesome-skills@app-store-optimization broomva/agent-control-metalayer-skill broomva/harness-engineering-skill broomva/deep-dive-research-skill -g -y
 ```
 
 **Time:** ~2 minutes
@@ -47,16 +61,22 @@ npx skills add eng0ai/eng0-template-skills@financial-deep-research ognjengt/foun
 Install each dependency separately:
 
 ```bash
-# Step 1: Install financial analysis skill
+# Step 1: Install financial analysis skill (required)
 npx skills add eng0ai/eng0-template-skills@financial-deep-research -g -y
 
-# Step 2: Install competitive intelligence skill
+# Step 2: Install competitive intelligence skill (required)
 npx skills add ognjengt/founder-skills@competitor-intel -g -y
 
-# Step 3: Install product analysis skill
+# Step 3: Install product analysis skill (required)
 npx skills add sickn33/antigravity-awesome-skills@app-store-optimization -g -y
 
-# Step 4: Install the orchestrator skill
+# Step 4: Install governance framework (optional)
+npx skills add broomva/agent-control-metalayer-skill -g -y
+
+# Step 5: Install harness engineering (optional)
+npx skills add broomva/harness-engineering-skill -g -y
+
+# Step 6: Install the orchestrator skill
 npx skills add broomva/deep-dive-research-skill -g -y
 ```
 
@@ -244,5 +264,5 @@ After successful installation:
 
 ---
 
-**Installation Guide Version:** 1.0
+**Installation Guide Version:** 1.1
 **Last Updated:** February 2025

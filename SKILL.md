@@ -27,6 +27,8 @@ dependencies:
   - financial-deep-research
   - competitor-intel
   - app-store-optimization
+  - agent-control-metalayer-skill
+  - harness-engineering-skill
 ai-requirements:
   - web-search
   - data-synthesis
