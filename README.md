@@ -140,18 +140,22 @@ Perfect for:
 
 ## How It Works
 
-The skill runs in an isolated Explore agent context (`context: fork`) with restricted tools for optimal research performance. It coordinates three specialized research agents:
+The skill runs in an isolated Explore agent context (`context: fork`) with restricted tools for optimal research performance. It coordinates five specialized agents defined in `.claude/agents/`:
 
 ```
 Research Request
       ↓
-┌────────────────────────────────────┐
-│  Financial Analysis                │  Funding, revenue, valuation
-├────────────────────────────────────┤
-│  Competitive Intelligence          │  Team, tech, positioning
-├────────────────────────────────────┤
-│  Product & Market Analysis         │  Metrics, TAM, engagement
-└────────────────────────────────────┘
+┌─────────────────────────────────────────────────┐
+│  research-orchestrator (opus)                   │  Coordinates all agents
+├─────────────────────────────────────────────────┤
+│  financial-researcher (sonnet)                  │  Funding, revenue, valuation
+├─────────────────────────────────────────────────┤
+│  competitive-analyst (sonnet)                   │  Team, tech, positioning
+├─────────────────────────────────────────────────┤
+│  market-product-analyst (sonnet)                │  Metrics, TAM, engagement
+├─────────────────────────────────────────────────┤
+│  governance-auditor (haiku)                     │  Quality & compliance
+└─────────────────────────────────────────────────┘
       ↓
 Synthesized Professional Reports
 ```

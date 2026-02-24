@@ -264,27 +264,34 @@ Not ideal for:
 ❌ **Specialized Domains** - May need domain-specific skills
 ❌ **Real-Time Data** - Research completes in 2-3 hours
 
-## Skill Coordination
+## Agents
 
-This skill orchestrates multiple specialized research agents:
+This skill includes 5 specialized agents in `.claude/agents/`:
 
-### Financial Analysis
-- Funding, revenue, valuation research
-- Investor and capital structure analysis
-- Financial metrics and projections
-- Comparable company analysis
+### research-orchestrator (opus)
+The lead coordinator that manages the full research workflow. Deploys specialist agents in parallel, cross-references findings, and synthesizes final reports.
+- **Skills:** financial-deep-research, competitor-intel, app-store-optimization, agent-control-metalayer-skill, harness-engineering-skill
+- **Tools:** Read, Glob, Grep, WebFetch, WebSearch, Task, Write
 
-### Competitive Intelligence
-- Business metrics and positioning
-- Competitive landscape mapping
-- Team and organization research
-- Technology stack analysis
+### financial-researcher (sonnet)
+Financial and funding analysis specialist. Revenue metrics, funding rounds, valuations, unit economics, and projections.
+- **Skills:** financial-deep-research
+- **Tools:** Read, Glob, Grep, WebFetch, WebSearch
 
-### Market & Product Analysis
-- Market sizing and TAM
-- Competitive benchmarking
-- User engagement metrics
-- Monetization and pricing
+### competitive-analyst (sonnet)
+Competitive landscape and strategic positioning analyst. Market share, team analysis, technology stack, and competitive threats.
+- **Skills:** competitor-intel
+- **Tools:** Read, Glob, Grep, WebFetch, WebSearch
+
+### market-product-analyst (sonnet)
+Product metrics and market opportunity analyst. App store performance, user engagement, market sizing, and monetization.
+- **Skills:** app-store-optimization
+- **Tools:** Read, Glob, Grep, WebFetch, WebSearch
+
+### governance-auditor (haiku)
+Quality and compliance auditor. Validates source verification, data quality, compliance, and report standards.
+- **Skills:** agent-control-metalayer-skill
+- **Tools:** Read, Glob, Grep
 
 ## Workflow
 
