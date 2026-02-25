@@ -1,5 +1,5 @@
 ---
-title: Deep-Dive Research Orchestrator
+name: deep-dive-research-orchestrator
 description: Conduct comprehensive multi-dimensional research on any subject using coordinated AI research specialists
 category: research
 tags:
